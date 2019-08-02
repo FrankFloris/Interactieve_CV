@@ -1,0 +1,3 @@
+RewriteEngine On
+rewritecond %{http_host} ^frankfloris.nl
+rewriteRule ^(.*) https://www.frankfloris.nl/$1 [R=301,L]

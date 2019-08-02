@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="whole-page">
+  <head>
+    <title>Frank's CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!--<div *ngIf="selected[0] && !selected[1]" class="overlay">-->
+        <!--<div class="overlay-content">-->
+          <!--<h2 class="alert alert-light">Wil je naar een andere pagina gaan?</h2>-->
+          <!--<button (click)="doeIets(1)" (click)="navigate()">verder</button>-->
+          <!--<button (click)="doeIets(0)">terug</button>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div *ngIf="selected[1]"class="overlay">-->
+        <!--<div class="overlay-content">-->
+          <!--<div class="grid">-->
+            <!--<div class="box a">A</div>-->
+            <!--<div class="box b">B</div>-->
+            <!--<div class="box c">C</div>-->
+            <!--<div class="box d">D</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <div *ngIf="!selected[0]" class="overlay">
+        <div class="overlay-content">
+      <main>
+        <div class="cv_item">
+          <h2>Welkom op de interactieve CV van Frank Floris</h2>
+          <div>
+            <p>
+              Hier vind je de CV van Frank Floris.<br>
+              Daarnaast kan je een indruk krijgen van een aantal programma's die ik heb gecodeerd.<br>
+              Informatie over wat voor persoon ik ben en wat mijn hobbies zijn kan je ook op deze pagina vinden.<br>
+              <button style="width: 150px;" onclick="document.getElementById('snowflakeContainer').style.visibility='hidden'">Minder animatie</button>
+<!--              <button style="width: 150px;" onclick="document.getElementById('snowflakeContainer').style.visibility='visible'">Ik wil de bellen terug</button>-->
+              <button style="width: 150px;" onclick="for (i = 0; i < 50; i++){
+              document.getElementById('snowflakeContainer').style.visibility='visible';
+              document.getElementsByClassName('snowflake')[i].style.border='3px solid #CCC';
+              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='transparent';
+              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
+              document.getElementsByClassName('snowflake')[i].style.width='100px';
+              document.getElementsByClassName('snowflake')[i].style.height='100px';
+              }">bellen terug</button>
+              <button style="width: 150px;" onclick="for (i = 0; i < 50; i++){
+              document.getElementById('snowflakeContainer').style.visibility='visible';
+              document.getElementsByClassName('snowflake')[i].style.border='0';
+              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='white';
+              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
+              document.getElementsByClassName('snowflake')[i].style.width='10px';
+              document.getElementsByClassName('snowflake')[i].style.height='10px';
+              }">sneeuw</button>
+              <button style="width: 150px;" onclick="for (i = 0; i < 50; i++){
+              document.getElementById('snowflakeContainer').style.visibility='visible';
+              document.getElementsByClassName('snowflake')[i].style.border=0;
+              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWAtWoLIS9B8v1Q80gAE8ZC0wFI7Zsm-5gJb21xb2TmpsoeRYJA)';
+              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
+              document.getElementsByClassName('snowflake')[i].style.width='100px';
+              document.getElementsByClassName('snowflake')[i].style.height='100px';
+              }">liever doge</button>
+              <button style="width: 150px;" onclick="for (i = 0; i < 50; i++){
+              document.getElementById('snowflakeContainer').style.visibility='visible';
+              document.getElementsByClassName('snowflake')[i].style.border=0;
+              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='#D4AF37';
+              document.getElementsByClassName('snowflake')[i].style.zIndex='5';
+              document.getElementsByClassName('snowflake')[i].style.width='50px';
+              document.getElementsByClassName('snowflake')[i].style.height='50px';
+              if (i > 10){
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='red';
+              }
+              if (i > 20){
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='silver';
+              }
+              if (i > 30){
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='green';
+              }
+              if (i > 40){
+              document.getElementsByClassName('snowflake')[i].style.backgroundColor='purple';
+              }
+              // random color did not work
+              }">liever confetti</button>
+
+<!--              document.getElementsByClassName('snowflake')[i].style.backgroundColor='red';-->
+
+
+<!--              <button onclick="testFunction()">test show 2</button>-->
+<!--              <button onclick="testFunctie()">rood maken</button>-->
+<!--              <button onclick="document.getElementById('snowflake').style.backgroundColor='#CCC'">deze dan</button>-->
+
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="cv_item">
+          <h2>Beschikbaarheid Frank</h2>
+          <div>
+            <p>
+              Ik ben per direct beschikbaar via YoungCapital NEXT.<br>
+              Voor meer informatie, neem contact op met mijn accountmanager <a href="https://www.linkedin.com/in/pauldelangehaarlem/" target="_blank">Paul de Lange</a> <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="cv_item">
+          <h2>Hier is een video van mijn nieuwste gameproject: Chess</h2>
+          <div>
+            <div  class="helft">
+              <div class="videowrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <br>
+          </div>
+
+        </div>
+
+
+      </main>
+        </div>
+      </div>
+
+    </div>
+    <script>
+      document.getElementsByClassName("mybtn222")[0].addEventListener("click", function(){
+        console.log("nee");
+        // document.getElementsByClassName("snowflake")[0].style.backgroundColor = "red";
+      })
+
+
+    </script>
+  </body>
+
+</html>
+

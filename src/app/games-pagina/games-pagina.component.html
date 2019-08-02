@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="whole-page">
+<head>
+  <title>Frank's Projecten</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+<!--  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">-->
+</head>
+
+<body>
+<div class="container">
+  <header></header>
+
+  <!--<img alt="Image not loading" class="achtergrond" src="https://i.pinimg.com/originals/50/65/87/5065877162dcb52e7eb3f523600c7ca4.jpg">-->
+  <main>
+    <div class="cv_item">
+      <h2>Mijn eigen projecten</h2>
+  <p><br>
+    Hier vind je de game-projecten die ik heb geprogrammeerd.<br>
+    Klik op een onderwerp om er meer over te weten te komen.<br>
+    Wil je gelijk zien wat de code doet? Bekijk dan het bijbehorende filmpje.
+  </p>
+    </div>
+
+
+    <!--    <h2>(mouseover)="mouseOver(0)" (mouseleave)="mouseNotOver(0)" (click)="doeIets(0)"</h2>-->
+    <!--    <div>*ngIf="mousedOver[0] || selected[0]"</div>-->
+    <!--    hetzelfde voor 1, 2, 3, 4, 5-->
+
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(6)">Java Chess</h2>
+      <div *ngIf="selected[6]">
+        <p>Schaken met een vriend(in) of tegen de computer, het is beiden mogelijk in mijn schaakspel<br>
+           Dit spel ga ik nog uitbreiden met opties zoals het opslaan van de gespeelde spellen.
+        </p>
+        <div class="helft">
+          <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+        <button class="md-button" (click)="lookAtChess()">Java Chess code</button>
+
+      </div>
+
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(0)">Project Bokemon</h2>
+      <div *ngIf="selected[0]">
+        <p>
+          Project Bokemon is een project dat ik samen met een medetrainee heb gemaakt.<br>
+          Bokemon is een Angular project dat gebruik maakt van frontend en een backend met een MySQL server.<br>
+          Het is feitelijk een Pokemon-kloon.
+        </p>
+        <div  class="helft">
+          <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/xIJYJhBpu9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
+        <button class="md-button" (click)="bokemonFront()">Bokemon frontend code</button>
+        <button class="md-button" (click)="bokemonBack()">Bokemon backend code</button>
+      </div>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(1)">Wizard Shooter</h2>
+      <div *ngIf="selected[1]">
+      <p>
+        In deze game beweeg je door een dungeon en gebruik je jouw magie om wezentjes te verslaan.
+      </p>
+      <div  class="helft">
+        <div class="videowrapper">
+          <iframe src="https://www.youtube.com/embed/-h_Dbf6CueA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <br>
+      <button class="md-button" (click)="startWizardGame()">Wizard Game code</button>
+      </div>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(2)">Avoidance Game</h2>
+      <div *ngIf="selected[2]">
+      <p>
+        In deze game is behendigheid belangrijk om alle bewegende objecten te ontwijken.
+      </p>
+      <div  class="helft">
+      <div class="videowrapper">
+      <iframe src="https://www.youtube.com/embed/0hViKk7O2lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div>
+      <br><button class="md-button" (click)="startAvoidanceGame()">Avoidance Game code</button>
+      </div>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(4)">Tetris</h2>
+      <div *ngIf="selected[4]">
+        <p>
+          Dit is een versie van de klassieker Tetris.
+        </p>
+        <div  class="helft">
+          <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/jSgkE-F5ZXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br><button class="md-button" (click)="startTetrisGame()">Tetris Game code</button>
+      </div>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(5)">Snake</h2>
+      <div *ngIf="selected[5]">
+        <p>
+          Dit is een versie van de klassieker Snake.
+        </p>
+        <div  class="helft">
+          <div class="videowrapper">
+            <iframe src="https://www.youtube.com/embed/90KsEp4nCTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br><button class="md-button" (click)="startSnakeGame()">Snake Game code</button>
+      </div>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(3)">Mijn GitHub</h2>
+      <div *ngIf="selected[3]">
+      <p>
+        Hier vind je al mijn projecten.
+      </p>
+      <button class="md-button" (click)="showAllProjects()">Mijn GitHub</button>
+      </div>
+    </div>
+
+
+
+
+  </main>
+<!-- <md-button (click)="startAvoidanceGame()">test</md-button>-->
+
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>-->
+</div>
+</body>
+</html>
