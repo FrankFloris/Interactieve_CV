@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
+  /*width: 99vw;*/
+}
+
+*{
+  /*border: 1px solid red;*/
 }
 
 html {
-  background-color: white;
+  /*background-color: white;*/
+  background-color: #30cfd0;
 }
 
 main {
@@ -20,7 +26,6 @@ router-outlet {
 
 .routeContainer {
   position: relative;
-  /*position: absolute;*/
 }
 .routeContainer>*{
   display: block;
@@ -35,17 +40,13 @@ router-outlet {
 
 .snowflake {
   position: fixed;
-  /*background-color: #CCC;*/
   user-select: none;
-  /*z-index: 1000;*/
   pointer-events: none;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   border: solid 3px;
   border-color: #CCC;
-  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWAtWoLIS9B8v1Q80gAE8ZC0wFI7Zsm-5gJb21xb2TmpsoeRYJA");*/
-  /*background-image: url("data:image/jpeg;base64,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");*/
 }
 
 .changedSnowflake{
@@ -55,28 +56,32 @@ router-outlet {
 .footer{
   background-color: #30cfd0;
   padding: 1vh;
-  width: 98vw;
+  padding-top: 10vh;
+  /*width: 98vw;*/
   z-index: 999;
+  bottom: 0;
+  height: 60px;
 }
 
 .footer>p{
   margin: 0;
   text-align: center;
-  width: 98vw;
+  font-family: 'Merriweather', serif;
+  /*width: 98vw;*/
 }
 
 nav>ul {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   list-style-type: none;
   padding: 0;
   margin: 0;
   position: fixed;
   background-color: #0099ff;
-  width: 99vw;
+  width: 100vw;
   height: 50px;
   overflow: hidden;
   z-index: 10;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 nav>ul>li {

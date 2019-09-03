@@ -4,14 +4,12 @@ header, footer {
 
 
 .whole-page{
-  width: 99vw;
-  height: 90vh;
-  /*width: 100%;*/
+  /*width: 99vw;*/
+  /*height: 87.2vh;*/
+  height: 87.2%;
   /*height: 100%;*/
-  /*position: fixed;*/
-  /*background-image: url("https://wallpaperplay.com/walls/full/b/1/e/131307.jpg");*/
+  /*height: 100vh;*/
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  /*overflow-y: scroll;*/
   overflow: auto;
 }
 
@@ -68,14 +66,14 @@ header, footer {
   height: 100%;
   /*background-image: url("https://wallpaperplay.com/walls/full/b/1/e/131307.jpg");*/
   /*background-color: lightblue;*/
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
 
 }
 
 main {
   margin-left: 12px;
   margin-right: 12px;
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 12px;
@@ -83,7 +81,7 @@ main {
 }
 
 h2 {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-bottom: 0;
   padding-top: 0;
   margin-bottom: 6px;

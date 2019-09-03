@@ -1,5 +1,6 @@
 body {
   height: 45px;
+  /*overflow: auto;*/
 }
 
 .nav_image {
@@ -69,7 +70,7 @@ li:hover:not(.active){
 main {
   margin-left: 12px;
   margin-right: 12px;
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -88,7 +89,7 @@ html {
 }
 
 .linkjes {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   text-underline: none;
   color: black;
 }

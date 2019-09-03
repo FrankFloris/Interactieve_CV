@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-<!--<nav class="navbar navbar-light bg-light">-->
-<!--  <a class="linkjes" routerlink="/welcome" href="/welcome">Home</a>-->
-<!--  <a class="linkjes" routerlink="/cv" href="/cv">Frank's CV</a>-->
-<!--  <a class="linkjes" routerlink="/games" href="/games">Frank's projecten</a>-->
-<!--  <a class="linkjes" routerlink="/frank" href="/frank">Over Frank</a>-->
-<!--&lt;!&ndash;  <input type="image" height="98px" width="78px" id="image" alt="CV" (click)="naarCV()" title="CV Frank" src="http://chittagongit.com/download/87318">&ndash;&gt;-->
-<!--</nav>-->
+
 <nav class="navbar">
-<ul class="nav" id="nav">
-  <li (click)="naarHome()" id="home"><a class="linkjes"> Home</a></li>
-  <li (click)="naarCV()" id="cv"><a class="linkjes"> Frank's CV</a></li>
-  <li (click)="naarGames()" id="projecten"><a class="linkjes"> Frank's projecten</a></li>
-  <li (click)="naarFrank()" id="frank"><a class="linkjes"> Over Frank</a></li>
-</ul>
-
+  <ul class="nav" id="nav">
+    <li (click)="naarHome()" id="home"><a class="linkjes"> Home</a></li>
+    <li (click)="naarCV()" id="cv"><a class="linkjes"> Frank's CV</a></li>
+    <li (click)="naarGames()" id="projecten"><a class="linkjes"> Frank's projecten</a></li>
+    <li (click)="naarFrank()" id="frank"><a class="linkjes"> Over Frank</a></li>
+  </ul>
 </nav>
-
-
-<!--<script>-->
-<!--  $("a.linkjes").click(function(){-->
-<!--    $("a.linkjes").css("background-color", "black");-->
-<!--    $(this).css("background-color", "red");-->
-<!--  });-->
-<!--</script>-->
-
-
 
 </body>
 <div id="page" class="routeContainer" [@routeAnimation]="getDepth(myOutlet)">
@@ -34,10 +17,11 @@
   <router-outlet #myOutlet="outlet"></router-outlet>
 </div>
 
-<!--<div class="footer">-->
-<!--  <p>Copyright © 2019</p>-->
-<!--  <p>Created with Angular by <a href="https://www.linkedin.com/in/frank-floris-70b057176/"> Frank Floris</a></p>-->
-<!--</div>-->
+<div class="footer">
+  <p>Copyright © 2019</p>
+  <p>Created with Angular by <a href="https://www.linkedin.com/in/frank-floris-70b057176/"> Frank Floris</a></p>
+</div>
+
 
 </html>
 

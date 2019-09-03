@@ -1,7 +1,8 @@
 .whole-page {
   /*opacity: 0.9999;*/
-  width: 99vw;
-  height: 90vh;
+  /*width: 99vw;*/
+  /*height: 87.2vh;*/
+  height: 87.2%;
   /*width: 100%;*/
   /*height: 100%;*/
   /*position: fixed;*/
@@ -15,7 +16,7 @@
 main {
   margin-left: 12px;
   margin-right: 12px;
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 12px;
@@ -23,7 +24,7 @@ main {
 }
 
 h2 {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-bottom: 12px;
   padding-top: 12px;
   margin-bottom: 6px;
@@ -60,7 +61,7 @@ td {
 .persoonsgegevens {
   /*width: 500px;*/
   /*height: 100px;*/
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   font-size: 20px;
   width: 40%;
   /*font-size: 100%;*/
@@ -70,14 +71,14 @@ td {
 }
 
 .description {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
 }
 
 .container {
   width: 100%;
   /*width: 99vw;*/
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
   /*padding-bottom: 5vh;*/
   /*min-width: 770px;*/
   height: 100%;

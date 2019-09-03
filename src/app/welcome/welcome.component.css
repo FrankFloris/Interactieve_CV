@@ -7,14 +7,10 @@ body {
 }
 
 .whole-page{
-  /*background-image: url(http://i.imgur.com/Vcx0y1U.jpg);*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*position: fixed;*/
-  width: 99vw;
-  height: 90vh;
+  /*width: 99vw;*/
+  /*height: 87.2vh;*/
+  height: 87.2%;
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  /*overflow-y: scroll;*/
   overflow: auto;
 }
 
@@ -56,21 +52,21 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  padding-bottom: 10%;
-  /*background-color: lightblue;*/
+  /*padding-bottom: 10%;*/
 }
 
 main {
   margin-left: 12px;
   margin-right: 12px;
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 12px;
+  z-index: 2;
 }
 
 h2 {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
   padding-bottom: 0;
   padding-top: 0;
   margin-bottom: 6px;
@@ -92,10 +88,11 @@ h2 {
   border-radius: 10px;
   border: 2px black solid;
   margin-bottom: 12px;
+  overflow: auto;
 }
 
 p {
-  font-family: 'Acme', serif;
+  font-family: 'Merriweather', serif;
 }
 
 .videowrapper {
