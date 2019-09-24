@@ -1,18 +1,3 @@
-header, footer {
-
-}
-
-
-.whole-page{
-  /*width: 99vw;*/
-  /*height: 87.2vh;*/
-  height: 87.2%;
-  /*height: 100%;*/
-  /*height: 100vh;*/
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  overflow: auto;
-}
-
 .grid {
   margin: 12px;
   display: grid;
@@ -22,11 +7,11 @@ header, footer {
   justify-content: center; /* align horizontal */
   /*align-items: center; !* align vertical *!*/
   /*grid-gap: 1px;*/
+  /*overflow: auto;*/
 }
 
 .box {
   color: black;
-  /*border: 2px dodgerblue solid;*/
   height: 100%;
   width: 100%;
 }
@@ -35,77 +20,19 @@ header, footer {
   font-weight: bold;
   font-size: 20px;
   border: 1px black solid;
-  /*height: 80px;*/
-  /*align-content: center;*/
-  /*width: 121px;*/
 }
 
 .b {
   font-size: 20px;
   font-style: italic;
   padding-left: 10px;
-  /*align-content: center;*/
-  /*vertical-align: central;*/
 }
 
 .c {
   font-size: 16px;
   text-align: left;
   padding-left: 10px;
-  /*align-content: center;*/
-  /*align-items: center;*/
-  /*vertical-align: center;*/
   align-self: center;
-  /*height: 80px;*/
-  /*width: 121px;*/
-}
-
-.container {
-  width: 100%;
-  /*min-width: 770px;*/
-  height: 100%;
-  /*background-image: url("https://wallpaperplay.com/walls/full/b/1/e/131307.jpg");*/
-  /*background-color: lightblue;*/
-  /*padding-bottom: 10%;*/
-
-}
-
-main {
-  margin-left: 12px;
-  margin-right: 12px;
-  font-family: 'Merriweather', serif;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 12px;
-  z-index: 2;
-}
-
-h2 {
-  font-family: 'Merriweather', serif;
-  padding-bottom: 0;
-  padding-top: 0;
-  margin-bottom: 6px;
-  margin-top: 6px;
-  height: min-content;
-  cursor: pointer;
-  /*width: max-content;*/
-}
-
-.cv_item {
-  /*background-color: coral;*/
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: white;
-  width: 95%;
-  text-align: left;
-  border-radius: 10px;
-  border: 2px black solid;
-  /*margin-bottom: 12px;*/
-  /*margin-top: 6px;*/
-  margin-bottom: 12px;
-  overflow: auto;
 }
 
 .cv_kopje {
@@ -123,18 +50,11 @@ h2 {
   padding-bottom: 12px;
 }
 
-.table {
-  width: auto;
-}
-
 .image_star {
-  /*position: absolute;*/
   background-size: 15px;
   padding: 7.5px;
   padding-left: 10px;
   margin-bottom: 28%;
-  /*top: 15px;*/
-  /*left: 15px;*/
   background-image: url("data:image/webp;base64,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");
   background-repeat: no-repeat;
   width: 0;
@@ -148,22 +68,3 @@ h2 {
   width: 15px;
   padding: 0;
 }
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-.achtergrond {
-  max-width: 100%;
-  position: fixed;
-  z-index: -2;
-  opacity: 0.2;
-}
-
-/* Clear floats after image containers */
-/*.row::after {*/
-/*  content: "";*/
-/*  clear: both;*/
-/*  display: table;*/
-/*}*/

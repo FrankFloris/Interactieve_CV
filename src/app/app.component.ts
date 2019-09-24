@@ -56,18 +56,39 @@ export class AppComponent {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 
+  removeActiveClass(){
+    var header = document.getElementById("nav");
+    var link = header.getElementsByClassName("active");
+    for (var i = 0; i < link.length; i++) {
+      link[i].className = link[i].className.replace(" active", "");
+    }
+
+  }
+
   naarHome() {
+    this.removeActiveClass();
+    var deze = document.getElementById("home");
+    deze.className += " active";
     this.router.navigate(['/welcome'])
   }
 
   naarGames() {
+    this.removeActiveClass();
+    var deze = document.getElementById("games");
+    deze.className += " active";
     this.router.navigate(['/games'])
   }
 
   naarFrank() {
+    this.removeActiveClass();
+    var deze = document.getElementById("aboutMe");
+    deze.className += " active";
     this.router.navigate(['/frank'])
   }
   naarCV() {
+    this.removeActiveClass();
+    var deze = document.getElementById("cv");
+    deze.className += " active";
     this.router.navigate(['/cv'])
   }
 }

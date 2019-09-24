@@ -18,6 +18,15 @@
 
   <main>
         <div class="cv_item">
+          <h2>Mijn CV</h2>
+          <p>
+            Hier vind je de alles over mijn opleiding en ervaring.<br>
+            Ook kan je hier de certificaten zien die ik heb behaald.<br>
+            Mijn taal- en overige vaardigheden kan je hier ook vinden.
+          </p>
+        </div>
+
+        <div class="cv_item">
           <h2 (click)="doeIets(2)">Educatie</h2>
           <div *ngIf="selected[2]">
             <table class="table">
@@ -100,124 +109,128 @@
         <div class="cv_item">
           <h2 (click)="doeIets(0)">Behaalde certificaten</h2>
           <div *ngIf="selected[0]">
-            <table class="table">
-              <tr>
-                <th>Oracle Certified Associate</th>
-                <th>Professional Scrum Master 1</th>
-              </tr>
-              <tr>
-                <th><img width="200px" height="200px" src="https://images.youracclaim.com/images/86629924-6c10-442c-8742-05ff5e45e922/Oracle-Certification-badge_OC-Associate.png" alt="Oracle-certification-badge"></th>
-                <th><img width="200px" height="200px" src="https://media.licdn.com/dms/image/C560BAQFzF6WZjNSHkQ/company-logo_400_400/0?e=1565222400&v=beta&t=ddTT5Mg33mN6mqMeGq7AvkUmxhZwlbD22XHmjxJX_Bk"></th>
-              </tr>
-            </table>
+            <div class="overflowable">
+              <table class="table">
+                <tr>
+                  <th>Oracle Certified Associate</th>
+                  <th>Professional Scrum Master 1</th>
+                </tr>
+                <tr>
+                  <th><img width="200px" height="200px" src="/Certified-Associate-JAVA-SE8-PROGRAMMER.png" alt="Oracle-certification-badge"></th>
+                  <th><img width="200px" height="200px" src="/Professional-Scrum-Master-1-badge" alt="Professional Scrum Master 1"></th>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
 
         <div class="cv_item">
           <h2 (click)="doeIets(1)">Taalvaardigheden</h2>
           <div *ngIf="selected[1]">
-            <div class="grid">
-              <div class="box b">Taal</div>
-              <div class="box b">Lezen</div>
-              <div class="box b">Schrijven</div>
-              <div class="box b">Conversatie</div>
-              <img title="Nederlands" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAD1BMVEX///+uHCghRounAAAALIAYYzKEAAABB0lEQVR4nO3QuRGAAAzAsPDsPzN9XFJAIU3g8xxs83XAD3lSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKe1FxsAwAAAAAAAAAAAAAAAAAAAMB7N9ucbJ6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Uk9Q6/I4nGDdNoAAAAASUVORK5CYII=" alt="Nederlands">
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+            <div class="overflowable">
+              <div class="grid">
+                <div class="box b">Taal</div>
+                <div class="box b">Lezen</div>
+                <div class="box b">Schrijven</div>
+                <div class="box b">Conversatie</div>
+                <img title="Nederlands" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAD1BMVEX///+uHCghRounAAAALIAYYzKEAAABB0lEQVR4nO3QuRGAAAzAsPDsPzN9XFJAIU3g8xxs83XAD3lSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKe1FxsAwAAAAAAAAAAAAAAAAAAAMB7N9ucbJ6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Ul5Up6UJ+VJeVKelCflSXlSnpQn5Uk9Q6/I4nGDdNoAAAAASUVORK5CYII=" alt="Nederlands">
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
+                </div>
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
+                </div>
+                <img title="Engels" class="box a" src="data:image/png;base64,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" alt="Engels">
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
+                </div>
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
               </div>
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
+                <div class="box c">
+                  <div class="row" title="zeer goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
               </div>
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+                <img title="Japans" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAgVBMVEX///+8AC25ABe7ACe7ACq3AAC5ABu6ACS7ACi4ABK6ACK3AAnnuL+6AB/14OS5ABjsx8356+24AA3gpq3pwMb9+frx1Nnls7rFPFPKUWT78fPSdYLtzNDYiZS/GTniqbHCKkXDNEzPannMXG3z3ODakJu9CTLem6XTd4XXhpLBJUF+FaLVAAADmElEQVR4nO3diXaiMBSA4QZBiYALblg7LrW1y/s/4EitpzMnsbKFnOj/PQH3nnATQpaHBwAAAAAAAAAAAAAAAAAAkJsN5k/TeBFPn+aDme2HsW72NFllIopS6eVkGqUiW02e7jYzo49tILv90Bf/8sN+Vwbbj9Hd5WUW76VMQnFJmEi5j+8pLfPV0OtdzMdZz+uu5rYftSXTLOhfTchJP9jFth+3BYu17BTMyNdLJNcL249s2OhTXi4ier78HNl+bIPGy6BsRr7aSrAc2350U97S64VVrxe92X54I8aZrJiRnMxusKksojKlVdWJbq7Wvge1MpIL3m0H0ahZNqydEiGG2Q0NbMeHooO03/UPN1NUBkm9UvKjkwxsB9OMF6/KoEQv9F5sh9OEgfSvx1qYL2+gpYx/mRGolJTE+ZoyOzRVS87Cg+u9z67qcP6y3s52UPU8dxtPiRDdZ9th1bGJDKREiGhjO7DqBvUH9HqBu53Ptun6etbZ2g6tqlfPUEqE8F5tB1eNsTcn5+jbk5l6c3KdzHZ4VcSpwZQIkU5tB1iBaPIzR+UL2wGWNzFXYE+8ie0QSwvNNpNjQ/Fth1jWxnQzOTYU10aza9PN5NhQ1raDLGdkttM5Sd36Z7pvfopA1dvbDrOMR5ND2B/Ro+1AS5iYmDZRdV3qjo0O63+4NMB/NDOVpHLo5VmYH5yceO78V39u5lfodX13ZmYT8wO2E79vO9SiBm2Vk2NBcWVqKW6rnBwLiitLRf8kreUk+WM72IKW7YxOcp2l7WALauGb+MyZb+P2SuyxyNoOtpgWux1nOp55nXWwZUk3dm5M2+uKj52xG780Fk2s+yxq6MYXz6adyZOTrhsT1S1NKH3nxI1pJXKiIicq6omKfkfF+ETFOFbF944G38Uq5k9UzLOpmI9VMW+vavP/jjMbnPgPqOJ/sYp1BSrWn2iwTknFejZVSy+PS68O62N1WEet0cK3cejKN/EZ+zI0fPbvKNjnpWF6P+DBdoAVmN436srMyX/YX6xiH7oG5xVocK6FivNPNDgnR2Nl5Dylle2w6uHcLVXz57N1nD+frfFz/EL3z/HjvEctzgXV4PxYDc4Z1uA8ah3OLdfgfHsN7kHQ4b4MDe5V0RltS9+/E972/Tu5eJ1yT5OC+7x0XlZDWeDeN3k/977luB9Q77d7JHd3eI/kt9N9oyn3jSq4lxYAAAAAAAAAAAAAAAAAANVfNFBJTeJrfr8AAAAASUVORK5CYII=" alt="Japans">
+                <div class="box c">
+                  <div class="row" title="matig">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
+                <div class="box c">
+                  <div class="row" title="matig">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
               </div>
-              <img title="Engels" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAe1BMVEXPFCv///8AJH3NABPtvcAAIXz8/f8AHHvPDijRKjudpMMADnfMAADNABymrMijqcYABnXOACPhg4v88vMAIH322dzZWWQAGnsAF3rZWGPNAA399fbaXWfMAAgAAHUACHbvxcjRLDyWnr/a3enjjpX01NfbY23XUFzhgIixHiG3AAAF1klEQVR4nO3dbXPaOhAFYKW5JimBhpA3Um6SvqXt//+FFzq9AduyLWnP2RUzez50OlOC1k+NbeyNFH7en01lNt+smg+8XM0PY328DCO5/Hh45fyKWFKzuprP3ofa/ohVdbP49bb742ka8OzTIxGwOr5mtbk+DLRdL5YxvL3b+18mAS9ogJXxpeP94TMHrIqvWT0m4/3lSwa8owBWxJeH985nClgNX7O6yMI74tv/w4MNYCV8+XgtvmTABgxYBV+zusvG6/AZAVbA18a7XT8n4fX4kgE/AAHN+dLwYi6RGtUBjfl2H6VCvB3fMuPFJEBTvi7e5yyPsM38AQKgIZ8Mb8dX8kNgQDM+Kd4fPnNAIz453l++/Q+f2wGa8CHw3vlMAQ34unil2x4ONwXNANX5UHhns3CBeSMJoDIfDG/37St0r7gNAFX5gHi77Q3oN6ybD72zBPz/SL18+E9a+P+NDQGV+BiHqXB4czNAFT7OMT4cD4C4kCwAVOBjnSBDexATQDpfFw+3XaE7kAEgmY+H1+MzAaTyMfEifAaARD4uXpRPdvu6AJDGx8Yb4Ct/8hQZePqpHImPjzfI13/uSQSk8AHxRuof5Ct76l4ESOBr187CG+VTA4TzdfEEx+6JT84oHxRwuDcGzJeGh2mImuDLb9kqKAbK162XiZfABwWMN1gC+YB4Sc2gCXx57aoFRcH4yHWW8kEL6zeZg/ioNcr4qMVB+CzwMviIBQL4bPCy+GhFivn0j3lFfKQzm5CPfmWA46MAivgUrkuRfISregGfyrciLB8UcP+dsphP7aYGlg98R+O1jO/VeM8T8EHvp71+K+H79qJ1P5LBBwScfS/h+37cWmeDJ+JD7oEFfBXgCfkIgNl8tn3ZoRHm7qV7ErnsJQMwk2+/55WO96l5uZNufbgQZ/OyuT4+Dt1Eslw8veH5bteL89hgKcfb68eXjXzbwwyT6Xq3eL5t2ntGy8EkTI+kmoJTh2WcTxTnE8X5RHE+UZxPFOcTxflEqY3v6zjfV+v6Ogn/VJUvU3vfF+sK2wnndWVUb+dnXV8n49V6PB6Px+PxeDwej8fj8Xg8Ho/H4/F4PB6Px+PxeDyeU491j1Inp9ZhZd0h187J9fdZ92d2cmrdpdYFdOK9zaI4nyjOJ4rzieJ8ojifKM4nyqnxgX6pv7iAznwEEL5twtQKmMBn0hjK/b/LyKQX54vft3i++4dFbLCb9WEs1Ewa2HlchvEWN/35VpbP69vOC0Ef3oHxPh+PB5nHBTmL0NjG9C0ieMBj38CYbUD5LEJmeIsIHvTUkQRoN4cVDE88g1rm2M84QND8fYMb8DC95yHm77MChMweKcIDzR4pAtSdPRKKB5u7VASoN3cpEA88c25mLYA9UDhvswiPMG+zqB7+vM0EPPCs4aCaGHztueFFhRLnrNcELF4xYbDIp0w8wooJwNpQfMQCCet1aAEWrRYzWFzuxxbIR65Rwkc+tpDWKoLXWcZHP7PRVsriA2au05ZZUNqFKXGdNhGgfJ024Ncio1UCuYAZa1SK8AzXqBQBlq9RibuTbL1CKg8wcX1eIp7K+rwswKTVoTPxcm+Hq6wOnbkNbcC81aHba5OL8CpamzxzO55TtiPCp4xH5OMD9vjU8ah8bMDQHUwdj8wHPY73tim0BzLAo/MxAcPxICZ4Cnw8wHAYwAhPhY8FGMzxlPg4gMEcT42PARjM8RT58ICBeVqvjw+9swTBLSlUr5wqHxSwCcVtXrhGQ2U+IOD0Om0KXZrqfDjACT6VFlcDPhTgKJ9Of7ANHwZwhE8Jz4wPATjIJ7mJeCp8csABvqTnthg8Uz4h4DLKp7jn7WPKJwOM8MkenhTEmE/0Va73IsDD48yY8wkAzfGq4CsGzMYr/h2IwVTBV9iSYo5XDV8RoDleRXwF7W0ZeNlt+4mpiC8b0ByvMr7MFl90s3RBKuPLAnz7Fb2avvxxmKJhNt8Q8Srk2wNezRNuJP/8Dze5nBcYYRZoAAAAAElFTkSuQmCC" alt="Engels">
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+                <div class="box c">
+                  <div class="row" title="goed">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+                <img title="Duits" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=" alt="Duits">
+                <div class="box c">
+                  <div class="row" title="redelijk">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
-            </div>
-              <div class="box c">
-                <div class="row" title="zeer goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+                <div class="box c">
+                  <div class="row" title="redelijk">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
-            </div>
-              <img title="Japans" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAgVBMVEX///+8AC25ABe7ACe7ACq3AAC5ABu6ACS7ACi4ABK6ACK3AAnnuL+6AB/14OS5ABjsx8356+24AA3gpq3pwMb9+frx1Nnls7rFPFPKUWT78fPSdYLtzNDYiZS/GTniqbHCKkXDNEzPannMXG3z3ODakJu9CTLem6XTd4XXhpLBJUF+FaLVAAADmElEQVR4nO3diXaiMBSA4QZBiYALblg7LrW1y/s/4EitpzMnsbKFnOj/PQH3nnATQpaHBwAAAAAAAAAAAAAAAAAAkJsN5k/TeBFPn+aDme2HsW72NFllIopS6eVkGqUiW02e7jYzo49tILv90Bf/8sN+Vwbbj9Hd5WUW76VMQnFJmEi5j+8pLfPV0OtdzMdZz+uu5rYftSXTLOhfTchJP9jFth+3BYu17BTMyNdLJNcL249s2OhTXi4ier78HNl+bIPGy6BsRr7aSrAc2350U97S64VVrxe92X54I8aZrJiRnMxusKksojKlVdWJbq7Wvge1MpIL3m0H0ahZNqydEiGG2Q0NbMeHooO03/UPN1NUBkm9UvKjkwxsB9OMF6/KoEQv9F5sh9OEgfSvx1qYL2+gpYx/mRGolJTE+ZoyOzRVS87Cg+u9z67qcP6y3s52UPU8dxtPiRDdZ9th1bGJDKREiGhjO7DqBvUH9HqBu53Ptun6etbZ2g6tqlfPUEqE8F5tB1eNsTcn5+jbk5l6c3KdzHZ4VcSpwZQIkU5tB1iBaPIzR+UL2wGWNzFXYE+8ie0QSwvNNpNjQ/Fth1jWxnQzOTYU10aza9PN5NhQ1raDLGdkttM5Sd36Z7pvfopA1dvbDrOMR5ND2B/Ro+1AS5iYmDZRdV3qjo0O63+4NMB/NDOVpHLo5VmYH5yceO78V39u5lfodX13ZmYT8wO2E79vO9SiBm2Vk2NBcWVqKW6rnBwLiitLRf8kreUk+WM72IKW7YxOcp2l7WALauGb+MyZb+P2SuyxyNoOtpgWux1nOp55nXWwZUk3dm5M2+uKj52xG780Fk2s+yxq6MYXz6adyZOTrhsT1S1NKH3nxI1pJXKiIicq6omKfkfF+ETFOFbF944G38Uq5k9UzLOpmI9VMW+vavP/jjMbnPgPqOJ/sYp1BSrWn2iwTknFejZVSy+PS68O62N1WEet0cK3cejKN/EZ+zI0fPbvKNjnpWF6P+DBdoAVmN436srMyX/YX6xiH7oG5xVocK6FivNPNDgnR2Nl5Dylle2w6uHcLVXz57N1nD+frfFz/EL3z/HjvEctzgXV4PxYDc4Z1uA8ah3OLdfgfHsN7kHQ4b4MDe5V0RltS9+/E972/Tu5eJ1yT5OC+7x0XlZDWeDeN3k/977luB9Q77d7JHd3eI/kt9N9oyn3jSq4lxYAAAAAAAAAAAAAAAAAANVfNFBJTeJrfr8AAAAASUVORK5CYII=" alt="Japans">
-              <div class="box c">
-                <div class="row" title="matig">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
-              </div>
-              <div class="box c">
-                <div class="row" title="matig">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
-            </div>
-              <div class="box c">
-                <div class="row" title="goed">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
-              </div>
-              <img title="Duits" class="box a" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=" alt="Duits">
-              <div class="box c">
-                <div class="row" title="redelijk">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
-              </div>
-              <div class="box c">
-                <div class="row" title="redelijk">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                </div>
-              </div>
-              <div class="box c">
-                <div class="row" title="redelijk">
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
-                  <div class="image_star"></div>
+                <div class="box c">
+                  <div class="row" title="redelijk">
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                    <div class="image_star"></div>
+                  </div>
                 </div>
               </div>
             </div>

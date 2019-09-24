@@ -1,99 +1,9 @@
-.whole-page {
-  /*opacity: 0.9999;*/
-  /*width: 99vw;*/
-  /*height: 87.2vh;*/
-  height: 87.2%;
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*position: fixed;*/
-  /*background-image: url("https://i.pinimg.com/originals/e3/a6/a8/e3a6a8f3ed3a3e9d6144d4741eb249f0.jpg");*/
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  /*overflow-y: scroll;*/
-  overflow: auto;
-  /*min-height: 100%*/
-}
-
-main {
-  margin-left: 12px;
-  margin-right: 12px;
-  font-family: 'Merriweather', serif;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 12px;
-  z-index: 2;
-}
-
-h2 {
-  font-family: 'Merriweather', serif;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  margin-bottom: 6px;
-  margin-top: 6px;
-  height: min-content;
-  cursor: pointer;
-  overflow-wrap: break-word;
-  /*width: max-content;*/
-}
-
-.cv_item {
-  /*background-color: coral;*/
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: white;
-  width: 95%;
-  text-align: left;
-  border-radius: 10px;
-  border: 2px black solid;
-  margin-bottom: 12px;
-  overflow: auto;
-}
-
-td {
-  padding-right: 30px;
-}
-
-.table {
-  width: auto;
-}
-
 .persoonsgegevens {
-  /*width: 500px;*/
-  /*height: 100px;*/
-  font-family: 'Merriweather', serif;
   font-size: 20px;
   width: 40%;
-  /*font-size: 100%;*/
-  /*max-width: max-content;*/
-  /*min-width: 40%;*/
-  /*overflow-wrap: break-word;*/
-}
-
-.description {
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
-}
-
-.container {
-  width: 100%;
-  /*width: 99vw;*/
-  /*padding-bottom: 10%;*/
-  /*padding-bottom: 5vh;*/
-  /*min-width: 770px;*/
-  height: 100%;
-  /*height: 100vh;*/
-  /*background-color: floralwhite;*/
-  /*margin-bottom: 0;*/
-}
-
-body {
-  padding: 0;
-  margin: 0;
 }
 
 .background-image {
-  /*height: 20%;*/
   max-height: 16%;
   position: fixed;
   max-width: 14%;
@@ -103,7 +13,6 @@ body {
 
 .background-image:hover {
   transform: rotate(-6deg);
-  /*z-index: -1;*/
 }
 
 .books {
@@ -144,11 +53,4 @@ body {
 .gaming {
   top: 35%;
   right: 3%;
-}
-
-.achtergrond {
-  max-width: 100%;
-  position: fixed;
-  z-index: -1;
-  opacity: 0.2;
 }

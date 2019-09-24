@@ -4,12 +4,13 @@
 
 <nav class="navbar">
   <ul class="nav" id="nav">
-    <li (click)="naarHome()" id="home"><a class="linkjes"> Home</a></li>
+    <li (click)="naarHome()" id="home"><a class="linkjes active"> Home</a></li>
     <li (click)="naarCV()" id="cv"><a class="linkjes"> Frank's CV</a></li>
-    <li (click)="naarGames()" id="projecten"><a class="linkjes"> Frank's projecten</a></li>
-    <li (click)="naarFrank()" id="frank"><a class="linkjes"> Over Frank</a></li>
+    <li (click)="naarGames()" id="games"><a class="linkjes"> Frank's projecten</a></li>
+    <li (click)="naarFrank()" id="aboutMe"><a class="linkjes"> Over Frank</a></li>
   </ul>
 </nav>
+
 
 </body>
 <div id="page" class="routeContainer" [@routeAnimation]="getDepth(myOutlet)">

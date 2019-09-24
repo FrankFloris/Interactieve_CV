@@ -6,8 +6,8 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/FrankFavicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,11 +25,11 @@
     var snowflakes = [];
 
     // Global variables to store our browser's window size
-    var browserWidth;
-    var browserHeight;
+    var browserWidth = document.documentElement.clientWidth;
+    var browserHeight = document.documentElement.clientHeight;
 
     // Specify the number of snowflakes you want visible
-    var numberOfSnowflakes = 50;
+    var numberOfSnowflakes = browserWidth/24 + 5;
 
     // Flag to reset the position of the snowflakes
     var resetPosition = false;
@@ -115,8 +115,8 @@
       snowflakeContainer.style.display = "block";
 
       // get our browser's size
-      browserWidth = document.documentElement.clientWidth;
-      browserHeight = document.documentElement.clientHeight;
+      // browserWidth = document.documentElement.clientWidth;
+      // browserHeight = document.documentElement.clientHeight;
 
       // create each individual snowflake
       for (var i = 0; i < numberOfSnowflakes; i++) {
@@ -188,5 +188,6 @@
       resetPosition = true;
     }
   </script>
+
 </body>
 </html>
