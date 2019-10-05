@@ -17,8 +17,8 @@ main {
   text-align: center;
   position: relative;
   z-index: 2;
-  margin-left: 12px;
-  margin-right: 12px;
+  /*margin-left: 12px;*/
+  /*margin-right: 12px;*/
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 12px;
@@ -134,11 +134,30 @@ button{
 }
 
 .whole-page{
-  /*width: 99vw;*/
-  /*height: 87.2vh;*/
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); !*let op: werkt niet goed met keyframes*!*/
   height: 87.2%;
   overflow: hidden;
+  /*animation: change-background 10s infinite;*/
+}
+
+
+@keyframes change-background{
+  /*from {background-image: linear-gradient(to top, #41d06f 0%, #326710 100%)}*/
+  /*to {background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%)}*/
+  /*from {background-color: green;}*/
+  /*to {background-color: blue;}*/
+  0%, 100% {background-color: green;}
+  50% {background-color: blue;}
+  /*0%{width:10000px;height:5px}100%{width:5px;height:10000px}*/
+}
+
+.circle{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 15px;
+  /*border-radius: 25%;*/
 }
 
 .cv_item {
@@ -248,3 +267,8 @@ td {
 .overflowable {
   overflow: auto;
 }
+
+/**:hover{*/
+/*  opacity:1;*/
+/*  background-color: green;*/
+/*}@keyframes repaint{0%{width:10000px;height:5px}100%{width:5px;height:10000px}}*/

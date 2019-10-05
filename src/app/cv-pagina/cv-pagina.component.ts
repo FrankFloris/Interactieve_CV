@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvPaginaComponent implements OnInit {
 
-  selected: boolean[] = [false, false, false, false, false, false];
+  selected: boolean[] = [true, true, true, true, true, true, true];
   mousedOver: boolean[] = [false, false, false, false, false, false, false, false];
 
   constructor() { }
@@ -18,14 +18,6 @@ export class CvPaginaComponent implements OnInit {
   doeIets(x){
     this.selected[x] = !this.selected[x];
   }
-
-  // mouseOver(x) {
-  //   if(!this.mousedOver){
-  //     this.mousedOver[x] = true;
-  //   } else {
-  //     this.mousedOver[x] = false;
-  //   }
-  // }
 
   mouseOver(x) {
     this.mousedOver[x] = true;

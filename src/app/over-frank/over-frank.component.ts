@@ -10,7 +10,7 @@ import {RouterOutlet} from "@angular/router";
 
 export class OverFrankComponent implements OnInit {
 
-  selected: boolean[] = [false, false, false, false, false, false];
+  selected: boolean[] = [true, true, true, true, true, true, true];
   mousedOver: boolean[] = [false, false, false, false, false, false, false, false];
 
   constructor() { }
