@@ -13,9 +13,10 @@ export class CvPaginaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('snowflakeContainer').style.visibility = 'hidden';
   }
 
-  doeIets(x){
+  openClose(x) {
     this.selected[x] = !this.selected[x];
   }
 
@@ -23,7 +24,7 @@ export class CvPaginaComponent implements OnInit {
     this.mousedOver[x] = true;
   }
 
-  mouseNotOver(x){
+  mouseNotOver(x) {
     this.mousedOver[x] = false;
   }
 

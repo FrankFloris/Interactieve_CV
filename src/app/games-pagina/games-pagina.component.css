@@ -3,18 +3,8 @@ body {
 }
 
 canvas {
-  /*display: block;*/
   z-index: -10;
-
-  /*position: absolute*/
-  /*position: relative;*/
   position: fixed;
-}
-
-.cv_item{
-  /*z-index: 100;*/
-  /*position: relative;*/
-  /*position: center;*/
 }
 
 .container{
@@ -25,5 +15,71 @@ canvas {
   position: fixed;
 }
 
+.animated {
+  position: absolute;
+  width: 99vw;
+  height: 100vh;
+  background-color: black;
+  /*animation: disappearing 8s;*/
+  overflow: hidden;
+  z-index: 10000;
+  opacity: 1;
+}
 
+.animated>div>h1 {
+  /*animation: typeing 4s steps(3);*/
+  /*width: 15ch;*/
+  width: 27ch;
+  font-family: Consolas, serif;
+  overflow: hidden;
+  white-space: nowrap;
+  position: center;
+  color: #0F0;
+}
 
+.animated.fff{
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  position: center;
+}
+
+.animated>div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  /*left: 10%;*/
+}
+
+/*@keyframes disappearing {*/
+/*  0% {*/
+/*    z-index: 10000;*/
+/*  }*/
+/*  80% {*/
+/*    z-index: 10000;*/
+/*    opacity: 1;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*}*/
+
+@keyframes disappearing {
+  0% {
+  }
+  100% {
+    opacity: 0;
+    z-index: -10000;
+  }
+
+}
+
+@keyframes typeing {
+  0%{
+    width: 12ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}

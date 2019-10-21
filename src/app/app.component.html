@@ -4,10 +4,10 @@
 
 <nav class="navbar">
   <ul class="nav" id="nav">
-    <li (click)="naarHome()" id="home"><a class="linkjes active"> Home</a></li>
-    <li (click)="naarCV()" id="cv"><a class="linkjes"> Frank's CV</a></li>
-    <li (click)="naarGames()" id="games"><a class="linkjes"> Frank's projecten</a></li>
-    <li (click)="naarFrank()" id="aboutMe"><a class="linkjes"> Over Frank</a></li>
+    <li (click)="navigateTo('welcome')" id="welcome"><a class="linkjes active">Home</a></li>
+    <li (click)="navigateTo('cv')" id="cv"><a class="linkjes">Frank's CV</a></li>
+    <li (click)="navigateTo('games')" id="games"><a class="linkjes">Frank's projecten</a></li>
+    <li (click)="navigateTo('frank')" id="frank"><a class="linkjes">Over Frank</a></li>
   </ul>
 </nav>
 
@@ -20,7 +20,7 @@
 
 <div class="footer">
   <p>Copyright © 2019</p>
-  <p>Created with Angular by <a href="https://www.linkedin.com/in/frank-floris-70b057176/"> Frank Floris</a></p>
+  <p>Created with Angular by <a href="https://www.linkedin.com/in/frank-floris-70b057176/" target="_blank" rel="noopener noreferrer"> Frank Floris</a></p>
 </div>
 
 

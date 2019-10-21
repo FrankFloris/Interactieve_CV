@@ -4,53 +4,26 @@
 }
 
 .background-image {
-  max-height: 16%;
-  position: fixed;
-  max-width: 14%;
   border-radius: 20px;
   border: 2px white solid;
+  max-width: 13%;
 }
 
 .background-image:hover {
   transform: rotate(-6deg);
 }
 
-.books {
-  top: 10%;
-  left: 2%;
+.testtable {
+  padding-top: 0;
+  padding-bottom: 10px;
+  text-align: left;
+  overflow: hidden;
+  width: 13%;
+  height: 85%;
+  position: fixed;
+  z-index: -1;
 }
 
-.cooking {
-  top: 30%;
-  left: 1%;
-}
-
-.boardgame {
-  top: 10%;
-  right: 4%
-}
-
-.plant {
-  top: 60%;
-  right: 4%;
-}
-
-.taart {
-  top: 75%;
-  left: 1%;
-}
-
-.fiets {
-  top: 80%;
-  right: 3%;
-}
-
-.films {
-  top: 55%;
-  left: 1%;
-}
-
-.gaming {
-  top: 35%;
-  right: 3%;
+.kwart {
+  height: 21vh;
 }

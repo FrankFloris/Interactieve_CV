@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterModule, Routes} from "@angular/router";
-import {WelcomeComponent} from "./welcome/welcome.component";
-import {LegePaginaComponent} from "./lege-pagina/lege-pagina.component";
-import {CvPaginaComponent} from "./cv-pagina/cv-pagina.component";
-import {GamesPaginaComponent} from "./games-pagina/games-pagina.component";
-import {OverFrankComponent} from "./over-frank/over-frank.component";
+import {RouterModule, Routes} from '@angular/router';
+import {WelcomeComponent} from './welcome/welcome.component';
+import {LegePaginaComponent} from './lege-pagina/lege-pagina.component';
+import {CvPaginaComponent} from './cv-pagina/cv-pagina.component';
+import {GamesPaginaComponent} from './games-pagina/games-pagina.component';
+import {OverFrankComponent} from './over-frank/over-frank.component';
 
 const routes: Routes = [
   // {path: 'welcome', component: WelcomeComponent, data: { title: 'home', animation: 'isLeft'}},
@@ -25,7 +25,7 @@ const routes: Routes = [
 
 @NgModule({
   // declarations: [],
-  imports: [RouterModule.forRoot(routes)
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
     // ,CommonModule
   ],
   exports: [RouterModule]

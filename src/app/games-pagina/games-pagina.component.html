@@ -7,6 +7,16 @@
 
 <body>
 
+<div id="animatedModal" class="animated">
+
+<!--  <span (click)="closeModal()" class="close">&times;</span>-->
+
+<!--  <img class="modal-content" id="modalImage" >-->
+
+  <div id="caption" class="fff"><h1>Loading code: {{percentage}}% complete</h1></div>
+<!--  <div id="caption" class="fff"><h1>Loading code...</h1></div>-->
+</div>
+
 <div class="achtergrond"><canvas id="canv"></canvas></div>
 <div class="container">
 
@@ -24,130 +34,188 @@
     </div>
 
 
-    <!--    <h2>(mouseover)="mouseOver(0)" (mouseleave)="mouseNotOver(0)" (click)="doeIets(0)"</h2>-->
-    <!--    <div>*ngIf="mousedOver[0] || selected[0]"</div>-->
-    <!--    hetzelfde voor 1, 2, 3, 4, 5-->
-
-
     <div class="cv_item">
-      <h2 (click)="doeIets(6)">Java Chess</h2>
-      <div *ngIf="selected[6]">
-        <p>Schaken met een vriend(in) of tegen de computer, het is beiden mogelijk in mijn schaakspel<br>
-           Dit spel ga ik nog uitbreiden met opties zoals het opslaan van de gespeelde spellen.
-        </p>
-        <div class="helft">
-          <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <br>
-        <button class="md-button" (click)="lookAtChess()">Java Chess code</button>
-
-      </div>
-
+      <h2 (click)="doeIets(7)" class="clickable">Hier is een video van mijn nieuwste gameproject: Een 3D wereld</h2>
+      <table *ngIf="selected[7]">
+        <tr>
+          <td>
+            <p>Voor deze 3D wereld heb ik gebruik gemaakt van de Lightweight Java Game Library (lwjgl).
+              Door het gebruik van verschillende vectoren, matrices en shaders kan er een 3D wereld worden gerenderd op het beelscherm.
+              Deze wereld heeft terrein met hoogte verschil, een skybox, een dag en nacht cyclus, meerdere lichtpunten en water.
+              Het water reflecteerd afhankelijk van de camerapositie, recht van boven is er nouwelijks reflectie, maar van de zijkant is er zeer veel reflectie.
+              Daarnaast is het mogelijk om entiteiten zoals bomen en bloemen op te pakken en ergens anders weer te herplaatsen.
+              Uiteraard kunnen deze entiteiten ook vanuit het niets worden geplaatst.
+              De laatste toevoeging die ik heb gedaan zijn vrolijk rondhuppelende konijntjes.
+              Deze konijntjes zorgen momenteel nog voor wat performance issues, maar dat is gewoon een nieuwe uitdaging! <br><br>
+              <a href="https://github.com/FrankFloris/3D_Game" target="_blank" rel="noopener noreferrer" class="md-button">3D wereld code</a>
+            </p>
+          </td>
+          <td>
+            <div class="videowrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cI63cJpaDps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div class="cv_item">
-      <h2 (click)="doeIets(0)">Project Bokemon</h2>
+      <h2 (click)="doeIets(6)" class="clickable">Java Chess</h2>
+      <table *ngIf="selected[6]">
+        <tr>
+          <td style="width: 28vw">
+            <div class="videowrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+          <td>
+            <p>Dit is een schaakspel dat gebruik maakt van Java's JPanel.
+              Het was een hele opgave om de regels van schaken te vertalen naar een spel dat je daadwerkelijk kan spelen op en computer.
+              Momenteel kan je via hotseat met een tweede persoon spelen.
+              Maar als je geen tegenstander hebt, dan kan je ook tegen de AI spelen.
+              Deze AI maakt gebruik van het minimax algoritme.
+              Het is ook mogelijk om de AI tegen een andere AI te laten spelen.
+              De AI kan je in principe zoveel zetten vooruit laten denken als je wil, maar iedere extra zet die vooruit wordt gedacht vereist een extra factor aan berekeningen.
+              De rekentijd kan zo erg lang duren, net zoals bij een gewoon potje schaak.
+              Momenteel is het nog niet mogelijk om het spel op te slaan, of opgeslagen spellen te laden, maar dat kan nog worden toegevoegd.
+              <br><br>
+              <a href="https://github.com/FrankFloris/Chess" target="_blank" rel="noopener noreferrer" class="md-button">Java Chess code</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(5)" class="clickable">Project Bokemon</h2>
+      <table *ngIf="selected[5]">
+        <tr>
+          <td>
+            <p>Project Bokemon is een project dat ik samen met een medetrainee heb gemaakt.
+              Bokemon is een Angular project dat gebruik maakt van frontend en een backend met een MySQL server.
+              Het is feitelijk een Pokemon-kloon.
+              Je kan met jouw personage rondlopen in een wereld die bewoond wordt door "Bokemon".
+              Deze Bokemon kan je tegenkomen in het hoge gras, om er vervolgens mee te vechten.
+              Als je ze weet te verslaan levert dat ervaringspunten op voor jouw Bokemon.
+              Je kan deze Bokemon ook verzamelen door ze te vangen.<br><br>
+              <a href="https://github.com/FrankFloris/Project-Bokemon-Frontend" target="_blank" rel="noopener noreferrer" class="md-button">Bokemon frontend code</a>
+              <a href="https://github.com/FrankFloris/Project-Bokemon-Backend" target="_blank" rel="noopener noreferrer" class="md-button">Bokemon backend code</a>
+            </p>
+          </td>
+          <td>
+            <div class="videowrapper">
+              <iframe src="https://www.youtube.com/embed/xIJYJhBpu9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(4)" class="clickable">Wizard Shooter</h2>
+      <table *ngIf="selected[4]">
+        <tr>
+          <td style="width: 28vw">
+            <div class="videowrapper">
+              <iframe src="https://www.youtube.com/embed/-h_Dbf6CueA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+          <td>
+            <p>Dit is een simpel spelletje.
+              Je bent een tovenaar die door een dungeon loopt.
+              Hier kom je vijanden tegen die jou schade doen als ze je weten te raken.
+              Om dat te voorkomen kan je de vijanden uitschakelen door ze te bombarderen met jouw magische krachten.
+              Maar let op, je bezit maar beperkte energie, dus schiet niet willekeurig in het rond.
+              Gelukkig kan je jouw magie bijvullen met speciale kistjes.
+              <br><br>
+              <a href="https://github.com/FrankFloris/Wizard-game" target="_blank" rel="noopener noreferrer" class="md-button">Wizard Shooter code</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(3)" class="clickable">Avoidance game</h2>
+      <table *ngIf="selected[3]">
+        <tr>
+          <td>
+            <p>In dit behendigheidsspelletje is het de bedoeling om alle bewegende objecten te ontwijken.
+              Er zullen steeds meer, en verschillende objecten verschijnen.
+              Je krijgt een score gebaseerd op hoelang je in leven blijft.
+              Jouw score kan je opofferen om upgrades te kopen: meer snelheid, en volledige genezing geven je een kans om een nóg hogere score te halen.
+              <br><br>
+              <a href="https://github.com/FrankFloris/Avoidance-Game" target="_blank" rel="noopener noreferrer" class="md-button">Avoidance Game code</a>
+            </p>
+          </td>
+          <td>
+            <div class="videowrapper">
+              <iframe src="https://www.youtube.com/embed/0hViKk7O2lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(2)" class="clickable">Tetris</h2>
+      <table *ngIf="selected[2]">
+        <tr>
+          <td style="width: 28vw">
+            <div class="videowrapper">
+              <iframe src="https://www.youtube.com/embed/jSgkE-F5ZXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+          <td>
+            <p>De klassieker: Tetris.
+              Zorg er voor dat de naar beneden vallende blokken goed in elkaar passen.
+              Is de rij vol? dan verdwijnt deze en scoor je punten.
+              Hoe meer rijen tegelijkertijd je vol maakt, des te meer punten je scoort.
+              Lukt het jou om een Tetris (4 rijen tegelijk) te halen?
+              <br><br>
+              <a href="https://github.com/FrankFloris/Tetris-game" target="_blank" rel="noopener noreferrer" class="md-button">Tetris code</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cv_item">
+      <h2 (click)="doeIets(1)" class="clickable">Snake</h2>
+      <table *ngIf="selected[1]">
+        <tr>
+          <td>
+            <p>Een versie van de klassieker Snake.
+              Eet met je slangetje de oranje balletjes op.
+              Ieder balletje dat je eet zorgt ervoor dat je lichaam langer wordt.
+              Maar pas op, als je iets anders dan het balletje raakt ben je game-over!
+              <br><br>
+              <a href="https://github.com/FrankFloris/SnakeGame" target="_blank" rel="noopener noreferrer" class="md-button">Snake code</a>
+            </p>
+          </td>
+          <td>
+            <div class="videowrapper">
+              <iframe src="https://www.youtube.com/embed/90KsEp4nCTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="cv_item">
+      <h2 class="clickable" (click)="doeIets(0)">Mijn GitHub</h2>
       <div *ngIf="selected[0]">
-        <p>
-          Project Bokemon is een project dat ik samen met een medetrainee heb gemaakt.<br>
-          Bokemon is een Angular project dat gebruik maakt van frontend en een backend met een MySQL server.<br>
-          Het is feitelijk een Pokemon-kloon.
-        </p>
-        <div  class="helft">
-          <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed/xIJYJhBpu9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <br>
-        <button class="md-button" (click)="bokemonFront()">Bokemon frontend code</button>
-        <button class="md-button" (click)="bokemonBack()">Bokemon backend code</button>
-      </div>
-    </div>
-
-    <div class="cv_item">
-      <h2 (click)="doeIets(1)">Wizard Shooter</h2>
-      <div *ngIf="selected[1]">
-      <p>
-        In deze game beweeg je door een dungeon en gebruik je jouw magie om wezentjes te verslaan.
-      </p>
-      <div  class="helft">
-        <div class="videowrapper">
-          <iframe src="https://www.youtube.com/embed/-h_Dbf6CueA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-      <br>
-      <button class="md-button" (click)="startWizardGame()">Wizard Game code</button>
-      </div>
-    </div>
-
-    <div class="cv_item">
-      <h2 (click)="doeIets(2)">Avoidance Game</h2>
-      <div *ngIf="selected[2]">
-      <p>
-        In deze game is behendigheid belangrijk om alle bewegende objecten te ontwijken.
-      </p>
-      <div  class="helft">
-      <div class="videowrapper">
-      <iframe src="https://www.youtube.com/embed/0hViKk7O2lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      </div>
-      <br><button class="md-button" (click)="startAvoidanceGame()">Avoidance Game code</button>
-      </div>
-    </div>
-
-    <div class="cv_item">
-      <h2 (click)="doeIets(4)">Tetris</h2>
-      <div *ngIf="selected[4]">
-        <p>
-          Dit is een versie van de klassieker Tetris.
-        </p>
-        <div  class="helft">
-          <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed/jSgkE-F5ZXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <br><button class="md-button" (click)="startTetrisGame()">Tetris Game code</button>
-      </div>
-    </div>
-
-    <div class="cv_item">
-      <h2 (click)="doeIets(5)">Snake</h2>
-      <div *ngIf="selected[5]">
-        <p>
-          Dit is een versie van de klassieker Snake.
-        </p>
-        <div  class="helft">
-          <div class="videowrapper">
-            <iframe src="https://www.youtube.com/embed/90KsEp4nCTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <br><button class="md-button" (click)="startSnakeGame()">Snake Game code</button>
-      </div>
-    </div>
-
-    <div class="cv_item">
-      <h2 (click)="doeIets(3)">Mijn GitHub</h2>
-      <div *ngIf="selected[3]">
       <p>
         Hier vind je al mijn projecten.
       </p>
-      <button class="md-button" (click)="showAllProjects()">Mijn GitHub</button>
+        <a href="https://github.com/FrankFloris" target="_blank" rel="noopener noreferrer" class="md-button">Mijn Github</a>
       </div>
     </div>
 
 
-
-
   </main>
-<!-- <md-button (click)="startAvoidanceGame()">test</md-button>-->
 
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>-->
 </div>
 </body>
 </html>

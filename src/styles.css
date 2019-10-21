@@ -30,6 +30,9 @@ h2 {
   margin-bottom: 6px;
   margin-top: 6px;
   height: min-content;
+}
+
+.clickable {
   cursor: pointer;
 }
 
@@ -49,7 +52,7 @@ router-outlet {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
+  display: block;
 }
 
 .snowflake {
@@ -164,15 +167,37 @@ button{
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
   background-color: white;
-  width: 95%;
+  /*width: 95%;*/
+  width: 100%;
   text-align: left;
   border-radius: 10px;
   border: 2px black solid;
   margin-bottom: 12px;
   overflow: hidden;
 }
+
+td {
+  padding: 0px 10px 0px 0;
+  vertical-align: top;
+}
+
+tr {
+  width: 100%;
+}
+
+td:nth-child(1){
+  width: 40vw;
+}
+
+td:nth-child(2){
+  width: 30vw;
+}
+
+/*table{*/
+/*  margin: 0;*/
+/*}*/
 
 p {
   padding: 0;
@@ -186,6 +211,7 @@ p {
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
+  margin-top: 8px;
 }
 
 .videowrapper iframe {
@@ -214,14 +240,14 @@ p {
 
 .background-image:hover {
   transform: rotate(-6deg);
+  cursor: pointer;
 }
 
 .footer{
   background-color: #30cfd0;
   padding: 1vh;
-  /*width: 98vw;*/
   width: 98%;
-  z-index: 999;
+  z-index: 1999;
   overflow: hidden;
 }
 
@@ -231,6 +257,7 @@ p {
 }
 
 .md-button {
+  color: black;
   padding: 0 6px 0 6px;
   /*margin: 6px 8px 6px 8px;*/
   margin-right: 8px;
@@ -272,3 +299,78 @@ td {
 /*  opacity:1;*/
 /*  background-color: green;*/
 /*}@keyframes repaint{0%{width:10000px;height:5px}100%{width:5px;height:10000px}}*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /*width: 80%;*/
+  height: 80%;
+  /*max-width: max-content;*/
+  /*max-height: max-content;*/
+  /*max-width: 700px;*/
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 25px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 45px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

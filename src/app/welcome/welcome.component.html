@@ -18,56 +18,13 @@
               Hier vind je de CV van Frank Floris.<br>
               Daarnaast kan je een indruk krijgen van een aantal programma's die ik heb gecodeerd.<br>
               Informatie over wat voor persoon ik ben en wat mijn hobbies zijn kan je ook op deze pagina vinden.<br>
-              Wil je een andere achtergrondanimatie dan kan je die hier instellen:<br>
-              <button onclick="document.getElementById('snowflakeContainer').style.visibility='hidden'">Minder animatie</button>
-              <button onclick="for (i = 0; i < document.getElementById('snowflakeContainer').childNodes.length; i++){
-              document.getElementById('snowflakeContainer').style.visibility='visible';
-              document.getElementsByClassName('snowflake')[i].style.border='3px solid #CCC';
-              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='transparent';
-              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
-              document.getElementsByClassName('snowflake')[i].style.width='100px';
-              document.getElementsByClassName('snowflake')[i].style.height='100px';
-              }">bellen terug</button>
-              <button onclick="for (i = 0; i < document.getElementById('snowflakeContainer').childNodes.length; i++){
-              document.getElementById('snowflakeContainer').style.visibility='visible';
-              document.getElementsByClassName('snowflake')[i].style.border='0';
-              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='white';
-              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
-              document.getElementsByClassName('snowflake')[i].style.width='10px';
-              document.getElementsByClassName('snowflake')[i].style.height='10px';
-              }">sneeuw</button>
-              <button onclick="for (i = 0; i < document.getElementById('snowflakeContainer').childNodes.length; i++){
-              document.getElementById('snowflakeContainer').style.visibility='visible';
-              document.getElementsByClassName('snowflake')[i].style.border=0;
-              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWAtWoLIS9B8v1Q80gAE8ZC0wFI7Zsm-5gJb21xb2TmpsoeRYJA)';
-              document.getElementsByClassName('snowflake')[i].style.zIndex='0';
-              document.getElementsByClassName('snowflake')[i].style.width='100px';
-              document.getElementsByClassName('snowflake')[i].style.height='100px';
-              }">liever doge</button>
-              <button onclick="for (i = 0; i < document.getElementById('snowflakeContainer').childNodes.length; i++){
-              document.getElementById('snowflakeContainer').style.visibility='visible';
-              document.getElementsByClassName('snowflake')[i].style.border=0;
-              document.getElementsByClassName('snowflake')[i].style.backgroundImage = 'none';
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='#D4AF37';
-              document.getElementsByClassName('snowflake')[i].style.zIndex='5';
-              document.getElementsByClassName('snowflake')[i].style.width='50px';
-              document.getElementsByClassName('snowflake')[i].style.height='50px';
-              if (i > 10){
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='red';
-              }
-              if (i > 20){
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='silver';
-              }
-              if (i > 30){
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='green';
-              }
-              if (i > 40){
-              document.getElementsByClassName('snowflake')[i].style.backgroundColor='purple';
-              }
-              // random color did not work
-              }">liever confetti</button>
+              Iedere pagina heeft een ander thema, en er zijn verschillende interacties mogelijk. Dit is om mijn eigen HTML en CSS vaardigheden uit te breiden.<br><br>
+              Wil je bijvoorbeeld een achtergrond-animatie instellen? Probeer een van deze:<br>
+              <button (click)="updateSnowflakes('visible', '5px solid white', 'none', 'transparent', '0', '100px', '100px', 0)">Zeepbellen</button>
+              <button (click)="updateSnowflakes('visible', '0', 'none', '#D4AF37', '5', '50px', '50px', 4)">Confetti</button>
+              <button (click)="updateSnowflakes('visible','0px','none','white','0','10px','10px', 0)">Winter</button>
+              <button (click)="updateSnowflakes('visible','0px','url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWAtWoLIS9B8v1Q80gAE8ZC0wFI7Zsm-5gJb21xb2TmpsoeRYJA)','white','0','100px','100px', 0)">Doge</button>
+              <button (click)="updateSnowflakes('hidden','0px','none','transparent','0','0px','0px', 0)">Genoeg!</button>
             </p>
           </div>
         </div>
@@ -79,38 +36,61 @@
           <div>
             <p>
               Ik ben per direct beschikbaar via YoungCapital NEXT.<br>
-              Voor meer informatie, neem contact op met mijn accountmanager <a href="https://www.linkedin.com/in/pauldelangehaarlem/" target="_blank">Paul de Lange</a> <br>
+              Voor meer informatie, neem contact op met mijn accountmanager <a href="https://www.linkedin.com/in/pauldelangehaarlem/" target="_blank">Paul de Lange</a><br>
             </p>
           </div>
         </div>
 
-<!--        <div class="blog_item">-->
-<!--          <h2>Blogpost 2 oktober</h2>-->
-<!--          <table>-->
-<!--            <tr>-->
-<!--              <td><p class="blogText">Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.Dit is een blogpost.</p></td>-->
-<!--              <td>-->
-
-<!--                  <div class="videowrapper">-->
-<!--                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-<!--                  </div>-->
-
-<!--              </td>-->
-<!--            </tr>-->
-<!--          </table>-->
-<!--        </div>-->
+        <div class="cv_item">
+          <table>
+            <tr>
+              <td style="width: 40vw">
+                <h2>Hier is een video van mijn nieuwste gameproject: Een 3D wereld</h2>
+                <p>Voor deze 3D wereld heb ik gebruik gemaakt van de Lightweight Java Game Library (lwjgl).
+                  Door het gebruik van verschillende vectoren, matrices en shaders kan er een 3D wereld worden gerenderd op het beelscherm.
+                  Deze wereld heeft terrein met hoogte verschil, een skybox, een dag en nacht cyclus, meerdere lichtpunten en water.
+                  Het water reflecteerd afhankelijk van de camerapositie, recht van boven is er nouwelijks reflectie, maar van de zijkant is er zeer veel reflectie.
+                  Daarnaast is het mogelijk om entiteiten zoals bomen en bloemen op te pakken en ergens anders weer te herplaatsen.
+                  Uiteraard kunnen deze entiteiten ook vanuit het niets worden geplaatst.
+                  De laatste toevoeging die ik heb gedaan zijn vrolijk rondhuppelende konijntjes.
+                  Deze konijntjes zorgen momenteel nog voor wat performance issues, maar dat is gewoon een nieuwe uitdaging! <br><br>
+                  <a href="https://github.com/FrankFloris/3D_Game" target="_blank" rel="noopener noreferrer" class="md-button">3D wereld code</a>
+                </p>
+              </td>
+              <td>
+                <div class="videowrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cI63cJpaDps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
 
         <div class="cv_item">
-          <h2>Hier is een video van mijn nieuwste gameproject: Chess</h2>
-          <div>
-            <div  class="helft">
-              <div class="videowrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <br>
-          </div>
-
+          <table>
+            <tr>
+              <td style="width: 28vw">
+                <div class="videowrapper">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/d82A7xbtKmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </td>
+              <td>
+                <h2>Hier is een video van mijn vorige gameproject: Chess</h2>
+                <p>Dit is een schaakspel dat gebruik maakt van Java's JPanel.
+                  Het was een hele opgave om de regels van schaken te vertalen naar een spel dat je daadwerkelijk kan spelen op en computer.
+                  Momenteel kan je via hotseat met een tweede persoon spelen.
+                  Maar als je geen tegenstander hebt, dan kan je ook tegen de AI spelen.
+                  Deze AI maakt gebruik van het minimax algoritme.
+                  Het is ook mogelijk om de AI tegen een andere AI te laten spelen.
+                  De AI kan je in principe zoveel zetten vooruit laten denken als je wil, maar iedere extra zet die vooruit wordt gedacht vereist een extra factor aan berekeningen.
+                  De rekentijd kan zo erg lang duren, net zoals bij een gewoon potje schaak.
+                  Momenteel is het nog niet mogelijk om het spel op te slaan, of opgeslagen spellen te laden, maar dat kan nog worden toegevoegd.
+                  <br><br>
+                  <a href="https://github.com/FrankFloris/Chess" target="_blank" rel="noopener noreferrer" class="md-button">Java Chess code</a>
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
 
 
@@ -119,14 +99,6 @@
       </div>
 
     </div>
-    <script>
-      document.getElementsByClassName("mybtn222")[0].addEventListener("click", function(){
-        console.log("nee");
-        // document.getElementsByClassName("snowflake")[0].style.backgroundColor = "red";
-      })
-
-
-    </script>
   </body>
 
 </html>

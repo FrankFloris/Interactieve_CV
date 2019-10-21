@@ -27,7 +27,7 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(2)">Educatie</h2>
+          <h2 class="clickable" (click)="openClose(2)">Educatie</h2>
           <div *ngIf="selected[2]">
             <table class="table">
               <tr>
@@ -40,7 +40,7 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(3)">Ervaring</h2>
+          <h2 class="clickable" (click)="openClose(3)">Ervaring</h2>
           <div *ngIf="selected[3]">
             <table class="table">
               <tr>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(4)">Overige ervaring</h2>
+          <h2 class="clickable" (click)="openClose(4)">Overige ervaring</h2>
           <div *ngIf="selected[4]">
             <table class="table">
               <tr>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(0)">Behaalde certificaten</h2>
+          <h2 class="clickable" (click)="openClose(0)">Behaalde certificaten</h2>
           <div *ngIf="selected[0]">
             <div class="overflowable">
               <table class="table">
@@ -125,7 +125,7 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(1)">Taalvaardigheden</h2>
+          <h2 class="clickable" (click)="openClose(1)">Taalvaardigheden</h2>
           <div *ngIf="selected[1]">
             <div class="overflowable">
               <div class="grid">
@@ -238,20 +238,21 @@
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(5)">Overige vaardigheden</h2>
+          <h2 class="clickable" (click)="openClose(5)">Overige vaardigheden</h2>
           <div *ngIf="selected[5]">
             <ul>
-              <li>BHV (alleen in 2013)</li>
+              <li>BHV (2013)</li>
               <li>Basis C#</li>
               <li>Spring</li>
               <li>Angular</li>
               <li>HTML</li>
+              <li>CSS</li>
             </ul>
           </div>
         </div>
 
         <div class="cv_item">
-          <h2 (click)="doeIets(6)">Download PDF van CV</h2>
+          <h2 class="clickable" (click)="openClose(6)">Download PDF van CV</h2>
             <div *ngIf="selected[6]">
 <!--              <a href="http://frankfloris.nl/Curriculum%20Vitae%20Frank%20Nederlands%20met%20fotov2.1.pdf" download="http://frankfloris.nl/Curriculum%20Vitae%20Frank%20Nederlands%20met%20fotov2.1.pdf">PDF versie van CV Frank</a>-->
                   <a href="/Curriculum%20Vitae%20Frank%20Nederlands%20met%20fotov2.1.pdf" download="/Curriculum%20Vitae%20Frank%20Nederlands%20met%20fotov2.1.pdf">PDF versie van CV Frank</a>
