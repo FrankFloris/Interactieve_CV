@@ -34,6 +34,7 @@ ngOnInit() {
     // chinese characters - taken from the unicode charset
     // var characters: string = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
     const characters = '日ｦｱｳｴｵｶｷｹｺｻｼｽｾｿﾀﾂﾃﾅﾆﾇﾈﾊﾋﾎﾏﾐﾑﾒﾓﾔﾕﾗﾘﾜ012345789Z¦｜:・.=*+-<>ç二';
+    // const characters = '二ɔ><-+*=.・:｜¦Z୧8٢टμƸςƖ0ﾜﾘﾗﾕﾔﾓﾒﾑﾐﾏﾎﾋﾊﾈﾇﾆﾅﾃﾂﾀｿｾｽｼｻｺｹｷｶｵｴｳｱｦ日'; /*https://www.messletters.com/en/mirrored/*/
     // converting the string into an array of single characters
     const characterArray: string[] = characters.split('');
 
@@ -88,7 +89,7 @@ upPercentage() {
   }
 }
 
-doeIets(x) {
+  inUitklappen(x) {
     this.selected[x] = !this.selected[x];
   }
 

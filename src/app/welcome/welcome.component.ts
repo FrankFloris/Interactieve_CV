@@ -20,7 +20,7 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit() {
     // Array to store our Snowflake objects
-    let snowflakes = [];
+    const snowflakes = [];
 
     // Global variables to store our browser's window size
     let browserWidth = document.documentElement.clientWidth;
@@ -178,38 +178,12 @@ export class WelcomeComponent implements OnInit {
   }
 
   doeIets(x) {
-    if (!this.selected[x]) {
-      this.selected[x] = true;
-    } else {
-      this.selected[x] = false;
-    }
+    this.selected[x] = !this.selected[x];
   }
 
   yesMouseOver(x) {
-    if (!this.mousedOver) {
-      this.mousedOver[x] = true;
-    } else {
-      this.mousedOver[x] = false;
-    }
+    this.mousedOver[x] = !this.mousedOver;
   }
-
-  // navigate() {
-  //   console.log('test');
-  //   this.router.navigate(['/cv']);
-  // }
-
-  // testfunction() {
-  //   console.log('test')
-  //   const def = 'maximus';
-  //   const snowflake = document.querySelectorAll('class snowflake');
-  //   for (let i = 0; i < snowflake.length; i++){
-  //     const element = snowflake[i];
-  //     element.innerHTML = element.innerHTML.replace(def, '<span class="classname">test</span>');
-  //     const spanEl = <HTMLElement> element.querySelector('span.classname');
-  //     spanEl.style.color = 'red';
-  //   }
-  // }
-
 
   private updateSnowflakes(visibility: string, border: string, backgroundImage: string, backgroundColor: string,
                            zIndex: string, width: string, height: string, extraColors: number) {

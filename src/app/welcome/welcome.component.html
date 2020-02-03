@@ -12,7 +12,7 @@
         <div class="overlay-content">
       <main>
         <div class="cv_item">
-          <h2>Welkom op de interactieve CV van Frank Floris</h2>
+          <h1>Welkom op de interactieve CV van Frank Floris</h1>
           <div>
             <p>
               Hier vind je de CV van Frank Floris.<br>
@@ -20,9 +20,9 @@
               Informatie over wat voor persoon ik ben en wat mijn hobbies zijn kan je ook op deze pagina vinden.<br>
               Iedere pagina heeft een ander thema, en er zijn verschillende interacties mogelijk. Dit is om mijn eigen HTML en CSS vaardigheden uit te breiden.<br><br>
               Wil je bijvoorbeeld een achtergrond-animatie instellen? Probeer een van deze:<br>
-              <button (click)="updateSnowflakes('visible', '5px solid white', 'none', 'transparent', '0', '100px', '100px', 0)">Zeepbellen</button>
+              <button (click)="updateSnowflakes('visible', '5px solid #CCC', 'none', 'transparent', '0', '100px', '100px', 0)">Zeepbellen</button>
               <button (click)="updateSnowflakes('visible', '0', 'none', '#D4AF37', '5', '50px', '50px', 4)">Confetti</button>
-              <button (click)="updateSnowflakes('visible','0px','none','white','0','10px','10px', 0)">Winter</button>
+              <button (click)="updateSnowflakes('visible','0px','none','#CCC','0','10px','10px', 0)">Winter</button>
               <button (click)="updateSnowflakes('visible','0px','url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWAtWoLIS9B8v1Q80gAE8ZC0wFI7Zsm-5gJb21xb2TmpsoeRYJA)','white','0','100px','100px', 0)">Doge</button>
               <button (click)="updateSnowflakes('hidden','0px','none','transparent','0','0px','0px', 0)">Genoeg!</button>
             </p>
@@ -35,10 +35,29 @@
           <h2>Beschikbaarheid Frank</h2>
           <div>
             <p>
-              Ik ben per direct beschikbaar via YoungCapital NEXT.<br>
-              Voor meer informatie, neem contact op met mijn accountmanager <a href="https://www.linkedin.com/in/pauldelangehaarlem/" target="_blank">Paul de Lange</a><br>
+              Ik ben net een nieuwe baan gestart en ben dus momenteel niet beschikbaar voor ander werk.<br>
             </p>
           </div>
+        </div>
+
+        <div class="cv_item">
+          <table>
+            <tr>
+              <td style="width: 28vw">
+                <div class="videowrapper" style="padding-top: 0">
+                  <img width="560" height="315"
+                       src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9pf6nb-8c6f0387-36fc-4af9-85a9-3d3d9eecb0ef.png/v1/fill/w_1280,h_907,q_80,strp/coloured_oyster_by_piethein21_d9pf6nb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOXBmNm5iLThjNmYwMzg3LTM2ZmMtNGFmOS04NWE5LTNkM2Q5ZWVjYjBlZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XnesE72vIOSHBAffFetUVHMGJ7xrKdQs6Qc9atYrvAg">
+                </div>
+              </td>
+              <td style="width: 40vw">
+                <h2>Hier is de link naar een pagina die ik voor en met een vriend heb gemaakt: <a href="http://nielsfractals.com" target="_blank" rel="noopener noreferrer">nielsfractals.com</a></h2>
+                <p>Voor deze website heb ik gebruik gemaakt van veel van de technieken die ik ook op deze website heb gebruikt, maar ook van angular binding.
+                  Het gebruik van Angular binding heeft voor een stuk efficiëntere code gezorgd <br><br>
+                  <a href="https://github.com/FrankFloris/NielsWebsite" target="_blank" rel="noopener noreferrer" class="md-button">Niels' fractal website</a>
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="cv_item">
@@ -49,7 +68,7 @@
                 <p>Voor deze 3D wereld heb ik gebruik gemaakt van de Lightweight Java Game Library (lwjgl).
                   Door het gebruik van verschillende vectoren, matrices en shaders kan er een 3D wereld worden gerenderd op het beelscherm.
                   Deze wereld heeft terrein met hoogte verschil, een skybox, een dag en nacht cyclus, meerdere lichtpunten en water.
-                  Het water reflecteerd afhankelijk van de camerapositie, recht van boven is er nouwelijks reflectie, maar van de zijkant is er zeer veel reflectie.
+                  Het water reflecteerd afhankelijk van de camerapositie, recht van boven is er nauwelijks reflectie, maar van de zijkant is er zeer veel reflectie.
                   Daarnaast is het mogelijk om entiteiten zoals bomen en bloemen op te pakken en ergens anders weer te herplaatsen.
                   Uiteraard kunnen deze entiteiten ook vanuit het niets worden geplaatst.
                   De laatste toevoeging die ik heb gedaan zijn vrolijk rondhuppelende konijntjes.

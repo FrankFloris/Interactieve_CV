@@ -19,8 +19,8 @@ const routes: Routes = [
   {path: 'cv', component: CvPaginaComponent, data: { depth: 2 }},
   {path: 'games', component: GamesPaginaComponent, data: { depth: 3}},
   {path: 'frank', component: OverFrankComponent, data: { depth: 4}},
-  {path: '', component: WelcomeComponent},
-  {path: '**', component: WelcomeComponent}
+  {path: '', component: WelcomeComponent, pathMatch: 'full'},
+  {path: '**', component: WelcomeComponent, pathMatch: 'full'}
 ]
 
 @NgModule({

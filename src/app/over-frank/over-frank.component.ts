@@ -2,6 +2,8 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 // import {fader} from "../route-animations";
 
+import bodyScroll from 'body-scroll-toggle';
+
 @Component({
   selector: 'app-over-frank',
   templateUrl: './over-frank.component.html',
@@ -19,7 +21,7 @@ export class OverFrankComponent implements OnInit {
     document.getElementById('snowflakeContainer').style.visibility = 'hidden';
   }
 
-  doeIets(x) {
+  inUitklappen(x) {
     this.selected[x] = !this.selected[x];
   }
 
@@ -27,13 +29,14 @@ export class OverFrankComponent implements OnInit {
     this.mousedOver[x] = true;
   }
 
-  mouseNotOver(x){
+  mouseNotOver(x) {
     this.mousedOver[x] = false;
   }
 
   closeModal() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'none';
+    bodyScroll.enable();
   }
 
   @HostListener('window:keyup', ['$event'])
@@ -52,6 +55,7 @@ export class OverFrankComponent implements OnInit {
     modalImg.alt = myImage.alt;
     captionText.innerHTML = modalImg.alt;
     modal.style.display = 'block';
+    bodyScroll.disable();
   }
 
 }

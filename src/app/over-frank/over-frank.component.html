@@ -15,7 +15,7 @@
   <main>
 
     <div class="cv_item">
-      <h2>Algemene informatie over Frank</h2>
+      <h1>Algemene informatie over Frank</h1>
       <p>Ik woon inmiddels al 10 jaar in het prachtige Leiden.
         In een huisje gevuld met boeken, planten en games aan de zonnige gracht.
         De meeste van mijn hobbies die ik hieronder vermeld doe ik met mijn lieve vriendin.
@@ -24,8 +24,8 @@
     </div>
 
     <div class="cv_item">
-      <h2 (click)="doeIets(1)">Buitenactiviteiten</h2>
-        <div *ngIf="this.selected[1]">
+      <h2 (click)="inUitklappen(3)" class="clickable">Buitenactiviteiten</h2>
+        <div *ngIf="this.selected[3]">
           <ul>
             <li>Lekker fietsen: meestal richting het strand of door de velden.</li>
             <li>Rooftop gardening: ik verbouw wat groente en fruit op mijn balkon.</li>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="cv_item">
-      <h2 (click)="doeIets(2)">Binnenactiviteiten</h2>
+      <h2 (click)="inUitklappen(2)" class="clickable">Binnenactiviteiten</h2>
         <div *ngIf="this.selected[2]">
           <ul>
           <li>Boeken lezen (fantasy, sci-fi)
@@ -76,7 +76,7 @@
           <li>Films kijken
             <ul>Mijn top 3:
               <li>The Shawshank Redemption</li>
-              <li>Forest Gump</li>
+              <li>Forrest Gump</li>
               <li>Howl's moving castle</li>
             </ul>
           </li>
@@ -85,8 +85,8 @@
     </div>
 
     <div class="cv_item">
-      <h2 (click)="doeIets(3)">Fun facts</h2>
-       <div *ngIf="this.selected[3]">
+      <h2 (click)="inUitklappen(1)" class="clickable">Fun facts</h2>
+       <div *ngIf="this.selected[1]">
          <ul>
            <li>Ik ben jurylid van de <a href="https://www.speelgoedvanhetjaar.nl/jury" target="_blank">speelgoed van het jaar verkiezing.</a></li>
            <li>Katten zijn mijn favoriete huisdier.</li>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="cv_item">
-      <h2 (click)="doeIets(0)">Persoonsgegevens</h2>
+      <h2 (click)="inUitklappen(0)" class="clickable">Persoonsgegevens</h2>
       <div *ngIf="this.selected[0]">
         <table class="persoonsgegevens">
           <tr>
@@ -121,12 +121,10 @@
     <div class="testtable" style="top: 10vh; left: 5px">
       <div>
         <table class="table">
-          <tr>
-            <td class="kwart" style="padding-left: 4%;"><img (click)="addModal('fantasy')" alt="Dit boek heb ik in wel drie talen gelezen." id="fantasy" title="Fantasy boeken zijn mijn favoriet!" class="background-image books" src="https://images-na.ssl-images-amazon.com/images/I/81iqZ2HHD-L.jpg"></td>
-          </tr>
-          <tr><td class="kwart"><img (click)="addModal('koken')" alt="Altijd iets nieuws koken, altijd vegetarisch." id="koken" title="Ik kook bijna altijd vegetarisch" class="background-image cooking" src="https://www.amenuforyou.com/wp-content/uploads/2017/06/canneloni-al-forno-1477607282-9986-1080x720.jpeg"></td></tr>
-          <tr><td class="kwart"><img (click)="addModal('films')" alt="Wat een meesterwerk, the Shawshank Redemption." id="films" title="De beste film" class="background-image films" src="https://media2.fdncms.com/clevescene/imager/u/original/29548898/shaw.jpg"></td></tr>
-          <tr><td class="kwart"><img (click)="addModal('taart')" alt="Leuk om te maken, lekker om te eten!" id="taart" title="Leuk om te maken, lekker om te eten" class="background-image taart" src="https://www.24kitchen.nl/files/styles/social_media_share/public/2014-05/135723.original.jpg?itok=R4gqjTLI"></td></tr>
+          <tr><td class="kwart" style="padding-left: 4%;"><img (click)="addModal('fantasy')" alt="Dit boek heb ik in wel drie talen gelezen." id="fantasy" title="Fantasy boeken zijn mijn favoriet!" class="background-image books" src="https://www.frankfloris.nl/Images/harry_potter.jpg"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('koken')" alt="Altijd iets nieuws koken, altijd vegetarisch." id="koken" title="Ik kook bijna altijd vegetarisch" class="background-image cooking" src="https://www.frankfloris.nl/Images/lasagne.jpeg"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('films')" alt="Wat een meesterwerk, the Shawshank Redemption." id="films" title="De beste film" class="background-image films" src="https://www.frankfloris.nl/Images/shawshank.jpg"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('taart')" alt="Leuk om te maken, lekker om te eten!" id="taart" title="Leuk om te maken, lekker om te eten" class="background-image taart" src="https://www.frankfloris.nl/Images/taart.jpg"></td></tr>
         </table>
       </div>
     </div>
@@ -134,16 +132,16 @@
     <div class="testtable" style="top: 10vh; right: 5px">
       <div>
         <table class="table">
-          <tr><td class="kwart" style="padding-left: 4vw;"><img (click)="addModal('boardgames')" alt="Ik heb kasten vol bordspelletjes." id="boardgames" title="Spelletjes spelen is altijd leuk" class="background-image boardgame" src="https://www.frankfloris.nl/spelletjeskast.jpg"></td></tr>
-          <tr><td class="kwart"><img (click)="addModal('gaming')" alt="Vroeger was alles beter, ook pc-games." id="gaming" title="Gaming life" class="background-image gaming" src="https://www.frankfloris.nl/homm3.png"></td></tr>
-          <tr><td class="kwart"><img (click)="addModal('gardening')" alt="Dit is mijn droom dak." id="gardening" title="Dit is mijn droom dak" class="background-image plant" src="https://freshome.com/wp-content/uploads/2012/10/rooftop-landscaping-ideas-2.jpg"></td></tr>
-          <tr><td class="kwart"><img (click)="addModal('fietsen')" alt="Lekker fietsen." id="fietsen" title="Fietsen is goed voor je" class="background-image fiets" src="https://cba.imgix.net/-/media/images/magazine/vakantie/fiets-aan-gracht-amsterdam4120x1600.jpg?auto=format&fit=crop&rev=34038C84C29C4A14BB49B092FBC8FEED&w=2060&h=800&format=auto"></td></tr>
+          <tr><td class="kwart" style="padding-left: 4vw;"><img (click)="addModal('boardgames')" alt="Ik heb kasten vol bordspelletjes." id="boardgames" title="Spelletjes spelen is altijd leuk" class="background-image boardgame" src="https://www.frankfloris.nl/Images/spelletjeskast.jpg"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('gaming')" alt="Vroeger was alles beter, ook pc-games." id="gaming" title="Gaming life" class="background-image gaming" src="https://www.frankfloris.nl/Images/homm3.png"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('gardening')" alt="Dit is mijn droom dak." id="gardening" title="Dit is mijn droom dak" class="background-image plant" src="https://www.frankfloris.nl/Images/dak.jpg"></td></tr>
+          <tr><td class="kwart"><img (click)="addModal('fietsen')" alt="Lekker fietsen." id="fietsen" title="Fietsen is goed voor je" class="background-image fiets" src="https://www.frankfloris.nl/Images/fiets_gracht.jpg"></td></tr>
         </table>
       </div>
     </div>
 
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" >
 
       <span (click)="closeModal()" class="close">&times;</span>
 
